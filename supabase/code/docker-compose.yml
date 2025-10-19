@@ -423,6 +423,7 @@ services:
       retries: 3
     environment:
       LOGFLARE_PUBLIC_ACCESS_TOKEN: ${LOGFLARE_PUBLIC_ACCESS_TOKEN}
+      LOGFLARE_API_KEY: ${LOGFLARE_API_KEY}
     command: [ "--config", "/etc/vector/vector.yml" ]
     security_opt:
       - "label=disable"
@@ -480,4 +481,3 @@ services:
 
 volumes:
   db-config:
-  
